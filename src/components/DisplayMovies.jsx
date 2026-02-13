@@ -7,7 +7,7 @@ import {
   PosterMovieProfile,
 } from "./MovieProfile";
 import { FilterBar } from "./FilterBar";
-import { useAuth } from "../contexts/authContext";
+import { useAuth } from "../contexts/AuthContext";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function DisplayMovies({ type, signedInText, signedOutText }) {

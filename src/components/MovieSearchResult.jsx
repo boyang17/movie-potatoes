@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useAuth } from "../contexts/authContext";
+import { useAuth } from "../contexts/AuthContext";
 import { useSearchParams } from "react-router-dom";
 import { DetailedMovieProfile } from "./MovieProfile";
 import { useMoviesStore } from "../stores/moviesStore";

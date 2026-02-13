@@ -1,5 +1,5 @@
 import { useMoviesStore } from "../stores/moviesStore";
-import { useAuth } from "../contexts/authContext";
+import { useAuth } from "../contexts/AuthContext";
 import { Eye, EyeOff, Plus, Minus } from "lucide-react";
 import toast from "react-hot-toast";
 import { useState } from "react";
