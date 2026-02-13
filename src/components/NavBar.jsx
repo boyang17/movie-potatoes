@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { SearchBar } from "./SearchBar";
-import { useAuth } from "../contexts/authContext";
+import { useAuth } from "../contexts/AuthContext";
 import "../index.css";
 import {
   BookmarkPlus,
