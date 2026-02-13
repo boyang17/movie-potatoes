@@ -29,6 +29,10 @@ export const HomePage = () => {
     return () => controller.abort();
   }, []);
 
+  useEffect(() => {
+    document.title = "Movie Potatoes";
+  }, []);
+
   return (
     <div className="pointer-events-none">
       <div className="fixed inset-0 -z-10">

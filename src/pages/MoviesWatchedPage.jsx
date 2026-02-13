@@ -1,6 +1,11 @@
 import { DisplayMovies } from "../components/DisplayMovies";
+import { useEffect } from "react";
 
 export const MoviesWatchedPage = () => {
+  useEffect(() => {
+    document.title = "Watched";
+  }, []);
+
   return (
     <div className="flex justify-center">
       <DisplayMovies
