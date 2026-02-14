@@ -36,7 +36,7 @@ function App() {
 
           <Route element={<HomeLayout />}>
             <Route path="/" element={<HomePage />} />
-            <Route path="/*" element={<HomePage />} />
+            <Route path="*" element={<HomePage />} />
           </Route>
         </Routes>
       </BrowserRouter>
