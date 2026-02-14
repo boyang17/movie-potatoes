@@ -140,6 +140,8 @@ export function DisplayMovies({ type, signedInText, signedOutText }) {
                       onClick={() => {
                         if (page !== "..." || page !== currentPage) {
                           setCurrentPage(page);
+                        } else {
+                          return;
                         }
                       }}
                     >
