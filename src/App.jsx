@@ -9,10 +9,12 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { SearchResultPage } from "./pages/MovieSearchResultPage";
 import { AuthenticationPage } from "./pages/AuthenticationPage";
 import { Toaster } from "react-hot-toast";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
     <>
+      <SpeedInsights />
       <BrowserRouter>
         <Routes>
           <Route element={<HomeLayout />}>
