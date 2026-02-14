@@ -138,10 +138,8 @@ export function DisplayMovies({ type, signedInText, signedOutText }) {
                       key={`page-${index}`}
                       className={`transition duration-200 px-1.5 ${page === "..." || page === currentPage ? "cursor-default text-gray-400" : "cursor-pointer hover:bg-[#9E9E9E]/30"}`}
                       onClick={() => {
-                        if (page !== "..." || page !== currentPage) {
+                        if (page !== "..." && page !== currentPage) {
                           setCurrentPage(page);
-                        } else {
-                          return;
                         }
                       }}
                     >
