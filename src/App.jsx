@@ -17,15 +17,12 @@ function App() {
       <SpeedInsights />
       <BrowserRouter>
         <Routes>
-          <Route element={<HomeLayout />}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/*" element={<HomePage />} />
-          </Route>
           <Route element={<DefaultLayout />}>
             <Route path="/search" element={<SearchResultPage />} />
             <Route path="/watchlist" element={<MovieWatchlistPage />} />
             <Route path="/watched" element={<MoviesWatchedPage />} />
           </Route>
+
           <Route element={<AuthenticationLayout />}>
             <Route
               path="/authentication"
@@ -35,6 +32,11 @@ function App() {
                 </PublicOnlyRoute>
               }
             />
+          </Route>
+
+          <Route element={<HomeLayout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/*" element={<HomePage />} />
           </Route>
         </Routes>
       </BrowserRouter>
