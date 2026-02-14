@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { SearchResultPage } from "./pages/MovieSearchResultPage";
 import { AuthenticationPage } from "./pages/AuthenticationPage";
 import { Toaster } from "react-hot-toast";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
