@@ -26,7 +26,7 @@ A simple and modern movie tracking app that helps you keep track of what you hav
 
 ## Technology
 
-- **React JS**
+- **React JavaScript**
 - **Tailwind CSS**
 - **Supabase**
 - **PostgreSQL**
