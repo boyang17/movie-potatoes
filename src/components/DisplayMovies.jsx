@@ -75,11 +75,11 @@ export function DisplayMovies({ type, signedInText, signedOutText }) {
     pages.push(1);
 
     if (currentPage <= 3) {
-      pages.push(2, 3, 4, "...");
+      pages.push(2, 3, 4, 5, "...");
     } else if (currentPage >= lastPage - 2) {
-      pages.push("...", lastPage - 3, lastPage - 2, lastPage - 1);
+      pages.push("...", lastPage - 4, lastPage - 3, lastPage - 2, lastPage - 1);
     } else {
-      pages.push("...", currentPage - 1, currentPage, currentPage + 1, "...");
+      pages.push("...", currentPage - 2, currentPage - 1, currentPage, currentPage + 1, currentPage + 2, "...");
     }
 
     pages.push(lastPage);
